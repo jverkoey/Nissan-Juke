@@ -1,4 +1,19 @@
 { "commands": [
-
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1101"}, "freq": 1,
+  "signals": [
+    {"id": "JUKE_ECT", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -50, "add": -50, "unit": "celsius" }, "name": "Engine coolant temperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1102"}, "freq": 1,
+  "signals": [
+    {"id": "JUKE_VSS", "path": "Movement", "fmt": { "len": 8, "max": 510, "mul": 2, "unit": "kilometersPerHour" }, "name": "Speed"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1103"}, "freq": 5,
+  "signals": [
+    {"id": "JUKE_VPWR", "path": "Battery", "fmt": { "len": 8, "max": 20.4, "mul": 8, "div": 100, "unit": "volts" }, "name": "Control module voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1106"}, "freq": 5,
+  "signals": [
+    {"id": "JUKE_IAT", "path": "Climate", "fmt": { "len": 8, "max": 215, "min": -50, "add": -50, "unit": "celsius" }, "name": "Intake air temperature"}
+  ]}
 ]
 }
