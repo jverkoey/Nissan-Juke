@@ -1,4 +1,5 @@
-{ "commands": [
+{ "diagnosticLevel": "C0",
+  "commands": [
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1101"}, "freq": 1,
   "signals": [
     {"id": "JUKE_ECT", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -50, "add": -50, "unit": "celsius" }, "name": "Engine coolant temperature"}
@@ -14,6 +15,14 @@
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1106"}, "freq": 5,
   "signals": [
     {"id": "JUKE_IAT", "path": "Climate", "fmt": { "len": 8, "max": 215, "min": -50, "add": -50, "unit": "celsius" }, "name": "Intake air temperature"}
+  ]},
+{ "hdr": "7E1", "fcm1": true, "dbg": true, "cmd": {"21": "01"}, "freq": 0.25,
+  "signals": [
+    {"id": "JUKE_CVT_VSP_SENSOR", "path": "Transmission", "fmt": {"bix": 16, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "CVT vehicle speed sensor"}
+  ]},
+{ "hdr": "7E1", "fcm1": true, "dbg": true, "cmd": {"21": "03"}, "freq": 1,
+  "signals": [
+    {"id": "JUKE_CVT_DETER_DATE", "path": "Transmission", "fmt": { "len": 32, "max": 4294967295, "unit": "scalar" }, "name": "CVT deterioration date"}
   ]}
 ]
 }
