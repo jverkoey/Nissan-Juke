@@ -20,7 +20,7 @@
   "signals": [
     {"id": "JUKE_CVT_VSP_SENSOR", "path": "Transmission", "fmt": {"bix": 16, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "CVT vehicle speed sensor"}
   ]},
-{ "hdr": "7E1", "fcm1": true, "dbg": true, "cmd": {"21": "03"}, "freq": 1,
+{ "hdr": "7E1", "fcm1": true, "din": "C0", "dout": "81", "dbg": true, "cmd": {"21": "03"}, "freq": 1,
   "signals": [
     {"id": "JUKE_CVT_DETER_DATE", "path": "Transmission", "fmt": { "len": 32, "max": 4294967295, "unit": "scalar" }, "name": "CVT deterioration date"}
   ]}
