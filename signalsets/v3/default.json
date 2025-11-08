@@ -89,7 +89,7 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "din": "C0", "dout": "81", "cmd": {"22": "12A1"}, "freq": 0.25,
   "signals": [
-    {"id": "JUKE_VSS_HD", "path": "Movement", "fmt": { "len": 16, "max": 500, "div": 10, "unit": "kilometersPerHour" }, "name": "Vehicle speed, high resolution"}
+    {"id": "JUKE_VSS_HD", "path": "Movement", "fmt": { "len": 16, "max": 500, "div": 10, "unit": "kilometersPerHour" }, "name": "Vehicle speed, high resolution", "suggestedMetric": "speed"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "din": "C0", "dout": "81", "cmd": {"22": "1302"}, "freq": 1,
   "signals": [
