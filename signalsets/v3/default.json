@@ -105,7 +105,7 @@
   ]},
 { "hdr": "7E1", "rax": "7E9", "fcm1": true, "din": "C0", "dout": "81", "cmd": {"21": "01"}, "freq": 0.25, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
-    {"id": "JUKE_CVT_VSS", "path": "Transmission", "fmt": {"bix": 16, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "CVT vehicle speed sensor", "suggestedMetric": "speed"}
+    {"id": "JUKE_CVT_VSS", "path": "Movement", "fmt": {"bix": 16, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "CVT vehicle speed sensor", "suggestedMetric": "speed"}
   ]},
 { "hdr": "7E1", "rax": "7E9", "fcm1": true, "din": "C0", "dout": "81", "cmd": {"21": "03"}, "freq": 1, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
