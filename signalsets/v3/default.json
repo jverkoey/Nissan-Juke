@@ -73,7 +73,7 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "din": "C0", "dout": "81", "cmd": {"22": "1114"}, "freq": 5,
   "signals": [
-    {"id": "JUKE_FLI", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Fuel level", "suggestedMetric": "fuelTankLevel"}
+    {"id": "JUKE_FLI", "path": "Fuel", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Fuel level", "suggestedMetric": "fuelTankLevel"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "din": "C0", "dout": "81", "cmd": {"22": "111F"}, "freq": 5,
   "signals": [
