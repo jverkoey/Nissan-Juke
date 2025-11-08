@@ -1,5 +1,4 @@
-{ "diagnosticLevel": "C0",
-  "commands": [
+{ "commands": [
 { "hdr": "7E0", "rax": "7E8", "din": "C0", "dout": "81", "cmd": {"22": "1101"}, "freq": 1, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JUKE_ECT", "path": "Engine", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "Engine coolant temperature"}
