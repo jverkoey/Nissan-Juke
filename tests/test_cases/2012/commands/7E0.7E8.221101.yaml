@@ -1,0 +1,20 @@
+command_id: 7E0.7E8.221101
+test_cases:
+- expected_values:
+    JUKE_ECT: 12
+  response: 7E8046211013E
+- expected_values:
+    JUKE_ECT: 13
+  response: 7E8046211013F
+- expected_values:
+    JUKE_ECT: 20
+  response: '7E80462110146'
+- expected_values:
+    JUKE_ECT: 37
+  response: '7E80462110157'
+- expected_values:
+    JUKE_ECT: 60
+  response: 7E8046211016E
+- expected_values:
+    JUKE_ECT: 88
+  response: 7E8046211018A

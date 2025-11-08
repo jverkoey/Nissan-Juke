@@ -1,28 +1,116 @@
 { "diagnosticLevel": "C0",
   "commands": [
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1101"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "din": "C0", "dout": "81", "cmd": {"22": "1101"}, "freq": 1, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
-    {"id": "JUKE_ECT", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -50, "add": -50, "unit": "celsius" }, "name": "Engine coolant temperature"}
+    {"id": "JUKE_ECT", "path": "Engine", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "Engine coolant temperature"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1102"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "din": "C0", "dout": "81", "cmd": {"22": "1102"}, "freq": 1, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
-    {"id": "JUKE_VSS", "path": "Movement", "fmt": { "len": 8, "max": 510, "mul": 2, "unit": "kilometersPerHour" }, "name": "Speed"}
+    {"id": "JUKE_VSS", "path": "Movement", "fmt": { "len": 8, "max": 510, "mul": 2, "unit": "kilometersPerHour" }, "name": "Speed", "suggestedMetric": "speed"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1103"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "din": "C0", "dout": "81", "cmd": {"22": "1103"}, "freq": 5, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JUKE_VPWR", "path": "Battery", "fmt": { "len": 8, "max": 20.4, "mul": 8, "div": 100, "unit": "volts" }, "name": "Control module voltage"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1106"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1104"}, "freq": 5,
   "signals": [
-    {"id": "JUKE_IAT", "path": "Climate", "fmt": { "len": 8, "max": 215, "min": -50, "add": -50, "unit": "celsius" }, "name": "Intake air temperature"}
+    {"id": "JUKE_FUEL_T", "path": "Fuel", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "Fuel temperature"}
   ]},
-{ "hdr": "7E1", "fcm1": true, "dbg": true, "cmd": {"21": "01"}, "freq": 0.25,
+{ "hdr": "7E0", "rax": "7E8", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1105"}, "freq": 5,
+  "signals": [
+    {"id": "JUKE_EGR_T", "path": "Engine", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "Exhaust gas recirculation temperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "din": "C0", "dout": "81", "cmd": {"22": "1106"}, "freq": 5, "dbgfilter": { "to": 2011, "from": 2013 },
+  "signals": [
+    {"id": "JUKE_IAT", "path": "Climate", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "Intake air temperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1107"}, "freq": 0.25,
+  "signals": [
+    {"id": "JUKE_SPARKADV_2", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Timing advance 2"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1108"}, "freq": 0.25,
+  "signals": [
+    {"id": "JUKE_SPARKADV_3", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Timing advance 3"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1109"}, "freq": 0.25,
+  "signals": [
+    {"id": "JUKE_SPARKADV_4", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Timing advance 4"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "110A"}, "freq": 0.25,
+  "signals": [
+    {"id": "JUKE_SPARKADV_1", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Timing advance 1"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "110B"}, "freq": 0.25,
+  "signals": [
+    {"id": "JUKE_IDLE_VALVE", "path": "Engine", "fmt": { "len": 8, "max": 100, "div": 2, "unit": "percent" }, "name": "Idle air control valve"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "110C"}, "freq": 0.25,
+  "signals": [
+    {"id": "JUKE_IDLE_VALVE_STEPS", "path": "Engine", "fmt": { "len": 8, "max": 100, "div": 2, "unit": "scalar" }, "name": "Idle air control valve steps"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "110D"}, "freq": 0.25,
+  "signals": [
+    {"id": "JUKE_IDLE_RPM", "path": "Engine", "fmt": { "len": 8, "max": 3000, "mul": 12.5, "unit": "rpm" }, "name": "Idle RPM"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "110E"}, "freq": 0.25,
+  "signals": [
+    {"id": "JUKE_MAP_V", "path": "Engine", "fmt": { "len": 8, "max": 5.1, "div": 50, "unit": "volts" }, "name": "MAP sensor voltage"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "110F"}, "freq": 0.25,
+  "signals": [
+    {"id": "JUKE_EVAP_STEPS", "path": "Engine", "fmt": { "len": 8, "max": 5.1, "unit": "scalar" }, "name": "EVAP steps"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1110"}, "freq": 0.25,
+  "signals": [
+    {"id": "JUKE_EVAP", "path": "Engine", "fmt": { "len": 8, "max": 100, "div": 2, "unit": "percent" }, "name": "EVAP"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1111"}, "freq": 5,
+  "signals": [
+    {"id": "JUKE_FUEL_T_V2", "path": "Fuel", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "Fuel temperature, v2"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1112"}, "freq": 5,
+  "signals": [
+    {"id": "JUKE_EGR_STEPS", "path": "Engine", "fmt": { "len": 8, "max": 127.5, "div": 2, "unit": "scalar" }, "name": "Exhaust gas recirculation steps"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1114"}, "freq": 5,
+  "signals": [
+    {"id": "JUKE_FLI", "path": "Engine", "fmt": { "len": 8, "max": 10.2, "div": 25, "unit": "percent" }, "name": "Fuel level"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "111F"}, "freq": 5,
+  "signals": [
+    {"id": "JUKE_EOT", "path": "Engine", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "Engine oil temperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "122A"}, "freq": 5,
+  "signals": [
+    {"id": "JUKE_CRUISE_VSS", "path": "Movement", "fmt": { "len": 16, "max": 500, "mul": 9, "div": 160, "unit": "kilometersPerHour" }, "name": "Cruise speed"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "122B"}, "freq": 5,
+  "signals": [
+    {"id": "JUKE_CRUISE_VSS_SET", "path": "Movement", "fmt": { "len": 16, "max": 500, "mul": 9, "div": 160, "unit": "kilometersPerHour" }, "name": "Cruise speed, set"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "12A1"}, "freq": 5,
+  "signals": [
+    {"id": "JUKE_VSS_HD", "path": "Movement", "fmt": { "len": 16, "max": 500, "div": 10, "unit": "kilometersPerHour" }, "name": "Vehicle speed, high resolution"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1302"}, "freq": 1,
+  "signals": [
+    {"id": "JUKE_AC_ON", "path": "Climate", "fmt": {"bix": 4, "len": 1, "max": 1, "unit": "offon" }, "name": "Air conditioning"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1304"}, "freq": 1,
+  "signals": [
+    {"id": "JUKE_IGN", "path": "Control", "fmt": {"bix": 7, "len": 1, "max": 1, "unit": "offon" }, "name": "Ignition"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "din": "C0", "dout": "81", "dbg": true, "cmd": {"22": "1305"}, "freq": 1,
+  "signals": [
+    {"id": "JUKE_BRAKE", "path": "Control", "fmt": {"bix": 2, "len": 1, "max": 1, "unit": "offon" }, "name": "Brake"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "fcm1": true, "din": "C0", "dout": "81", "cmd": {"21": "01"}, "freq": 0.25, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
     {"id": "JUKE_CVT_VSP_SENSOR", "path": "Transmission", "fmt": {"bix": 16, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "CVT vehicle speed sensor"}
   ]},
-{ "hdr": "7E1", "fcm1": true, "din": "C0", "dout": "81", "dbg": true, "cmd": {"21": "03"}, "freq": 1,
+{ "hdr": "7E1", "rax": "7E9", "fcm1": true, "din": "C0", "dout": "81", "cmd": {"21": "03"}, "freq": 1, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
-    {"id": "JUKE_CVT_DETER_DATE", "path": "Transmission", "fmt": { "len": 32, "max": 4294967295, "unit": "scalar" }, "name": "CVT deterioration date"}
+    {"id": "JUKE_CVT_DETER", "path": "Transmission", "fmt": { "len": 32, "max": 4294967295, "omax": 210000, "unit": "scalar" }, "name": "CVT deterioration counter"}
   ]}
 ]
 }

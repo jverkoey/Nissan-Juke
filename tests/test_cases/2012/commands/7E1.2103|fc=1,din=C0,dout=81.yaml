@@ -1,0 +1,5 @@
+command_id: 7E1.2103|fc=1,din=C0,dout=81
+test_cases:
+- expected_values:
+    JUKE_CVT_DETER: 76038
+  response: '7E906610300012906'
