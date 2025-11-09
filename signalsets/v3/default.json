@@ -5,7 +5,7 @@
   ]},
 { "hdr": "7E1", "rax": "7E9", "fcm1": true, "din": "C0", "dout": "81", "cmd": {"21": "03"}, "freq": 1, "dbgfilter": { "to": 2011, "from": 2013 },
   "signals": [
-    {"id": "JUKE_CVT_DETER", "path": "Transmission", "fmt": { "len": 32, "max": 4294967295, "omax": 210000, "unit": "scalar" }, "name": "CVT deterioration counter"}
+    {"id": "JUKE_CVT_DETER", "path": "Transmission", "fmt": { "len": 32, "max": 4294967295, "omax": 210000, "unit": "scalar" }, "name": "CVT deterioration counter", "suggestedMetric": "cvtDeterioration"}
   ]}
 ]
 }
