@@ -1,4 +1,4 @@
-command_id: 7E0.7E8.221101
+command_id: 7E0.7E8.221101|din=C0,dout=81
 test_cases:
 - expected_values:
     JUKE_ECT: 12
@@ -9,6 +9,12 @@ test_cases:
 - expected_values:
     JUKE_ECT: 20
   response: '7E80462110146'
+- expected_values:
+    JUKE_ECT: 24
+  response: 7E8046211014A
+- expected_values:
+    JUKE_ECT: 29
+  response: 7E8046211014F
 - expected_values:
     JUKE_ECT: 37
   response: '7E80462110157'

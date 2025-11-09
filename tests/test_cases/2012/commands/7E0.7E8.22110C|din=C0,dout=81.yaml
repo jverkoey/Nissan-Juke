@@ -1,0 +1,5 @@
+command_id: 7E0.7E8.22110C|din=C0,dout=81
+test_cases:
+- expected_values:
+    JUKE_IDLE_VALVE_STEPS: 100
+  response: 7E80462110CC8

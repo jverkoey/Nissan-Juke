@@ -1,0 +1,5 @@
+command_id: 7E0.7E8.221105|din=C0,dout=81
+test_cases:
+- expected_values:
+    JUKE_EGR_T: -50
+  response: '7E80462110500'

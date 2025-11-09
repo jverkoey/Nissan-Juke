@@ -1,0 +1,14 @@
+command_id: 7E0.7E8.221109|din=C0,dout=81
+test_cases:
+- expected_values:
+    JUKE_SPARKADV_4: 93
+  response: 7E8046211095D
+- expected_values:
+    JUKE_SPARKADV_4: 95
+  response: 7E8046211095F
+- expected_values:
+    JUKE_SPARKADV_4: 97
+  response: '7E80462110961'
+- expected_values:
+    JUKE_SPARKADV_4: 107
+  response: 7E8046211096B

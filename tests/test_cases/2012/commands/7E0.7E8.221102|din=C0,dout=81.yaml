@@ -1,4 +1,4 @@
-command_id: 7E0.7E8.221102
+command_id: 7E0.7E8.221102|din=C0,dout=81
 test_cases:
 - expected_values:
     JUKE_VSS: 0

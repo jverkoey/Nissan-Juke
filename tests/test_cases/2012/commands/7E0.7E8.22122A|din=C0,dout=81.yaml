@@ -1,0 +1,5 @@
+command_id: 7E0.7E8.22122A|din=C0,dout=81
+test_cases:
+- expected_values:
+    JUKE_CRUISE_VSS: 29.475
+  response: 7E80562122A020C

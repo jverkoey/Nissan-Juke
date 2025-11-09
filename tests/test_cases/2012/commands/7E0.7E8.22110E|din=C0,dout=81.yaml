@@ -1,0 +1,5 @@
+command_id: 7E0.7E8.22110E|din=C0,dout=81
+test_cases:
+- expected_values:
+    JUKE_MAP_V: 1.94
+  response: 7E80462110E61

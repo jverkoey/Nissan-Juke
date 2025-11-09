@@ -1,4 +1,4 @@
-command_id: 7E0.7E8.221103
+command_id: 7E0.7E8.221103|din=C0,dout=81
 test_cases:
 - expected_values:
     JUKE_VPWR: 13.68
