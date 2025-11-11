@@ -1,8 +1,8 @@
-command_id: 7E0.7E8.221102|din=C0,dout=81
+command_id: DB33.221102|din=C0,dout=81
 test_cases:
 - expected_values:
-    JUKE_VSS: 0
+    NI_VSS: 0
   response: '7E80462110200'
 - expected_values:
-    JUKE_VSS: 70
+    NI_VSS: 70
   response: '7E80462110223'

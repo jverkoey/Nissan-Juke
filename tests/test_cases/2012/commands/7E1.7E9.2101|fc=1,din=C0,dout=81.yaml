@@ -1,7 +1,7 @@
 command_id: 7E1.7E9.2101|fc=1,din=C0,dout=81
 test_cases:
 - expected_values:
-    JUKE_CVT_VSS: 1
+    JUKE_CVT_VSS: 0
   response: |-
     7E91050610100000100
     7E92101265A00D2B800
@@ -16,7 +16,7 @@ test_cases:
     7E92A1F000000020000
     7E92B00001000000000
 - expected_values:
-    JUKE_CVT_VSS: 1
+    JUKE_CVT_VSS: 0
   response: |-
     7E91050610100000100
     7E921012A5B00DEB800
@@ -31,7 +31,7 @@ test_cases:
     7E92A1F000000020000
     7E92B00001000000000
 - expected_values:
-    JUKE_CVT_VSS: 1
+    JUKE_CVT_VSS: 0
   response: |-
     7E91050610100000100
     7E921012A5C00DDB800

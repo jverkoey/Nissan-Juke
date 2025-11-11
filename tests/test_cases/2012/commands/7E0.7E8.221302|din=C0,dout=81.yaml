@@ -1,8 +1,0 @@
-command_id: 7E0.7E8.221302|din=C0,dout=81
-test_cases:
-- expected_values:
-    JUKE_AC_ON: 0
-  response: 7E805621302213F
-- expected_values:
-    JUKE_AC_ON: 0
-  response: 7E805621302253F

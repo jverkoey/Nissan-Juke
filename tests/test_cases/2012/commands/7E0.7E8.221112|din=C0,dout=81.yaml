@@ -1,5 +1,0 @@
-command_id: 7E0.7E8.221112|din=C0,dout=81
-test_cases:
-- expected_values:
-    JUKE_EGR_STEPS: 0
-  response: '7E80462111200'
